@@ -1,0 +1,293 @@
+/** PARTIE ABOUT **/
+
+#about {
+    height: 0;
+    padding-top: 30px;
+}
+
+h2 {
+    font-size: 245%;
+    margin-top: 100px;
+}
+
+h2::before {
+    display: block;
+    margin: 42px 0;
+    content: "";
+}
+
+.number-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 8rem;
+    z-index: 10;
+    margin-top: 5px;
+}
+
+.number-wrapper .number-count {
+    position: relative;
+    display: inline-block;
+    top: 15%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.number-wrapper .number {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8rem;
+    color: rgba(216, 28, 87, 0.5);
+    margin-left: -2.5rem;
+    font-weight: 700;
+}
+
+.container {
+    background-image: url("../../assets/images/peinture.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about h2::before {
+    border-bottom: 4px dashed #000000;
+}
+
+#about p {
+    margin: 0;
+}
+
+.profile {
+    border-radius: 50%;
+    width: 250px;
+    height: 260px;
+}
+
+.image {
+    text-align: center;
+}
+
+.aboutme {
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+
+/* Partie responsive*/
+
+@media screen and (max-width: 800px) {
+    .profile {
+        width: 200px;
+        height: 200px;
+    }
+    h2 {
+        font-size: 150%;
+        margin-top: 140px;
+    }
+    .number-wrapper {
+        margin-top: -50px;
+    }
+    .number-wrapper .number {
+        font-size: 4rem;
+        margin-left: -1rem;
+        color: rgba(216, 28, 87, 0.5);
+        font-weight: 700;
+    }
+}
+
+
+/** FIN PARTIE ABOUT **/
+
+
+/** PARTIE PARCOURS **/
+
+#process {
+    overflow-x: hidden;
+    background-color: bisque;
+}
+
+#process .section-heading {
+    margin-bottom: 40px;
+}
+
+.orange {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+.orange::before {
+    margin: 0;
+}
+
+.steps-pane img {
+    height: 100px;
+    width: 100px;
+    margin-top: 18px;
+    -webkit-transform: skewX(-15deg);
+    margin-left: 15px;
+}
+
+.pane-warp {
+    height: 140px;
+    width: 25px;
+    margin-left: 20%;
+    margin-top: 20px;
+    -webkit-transform: skewX(15deg);
+}
+
+.steps-pane {
+    background-color: white;
+    height: 140px;
+    width: 140px;
+    margin-left: 30px;
+    box-shadow: 7px 0px 5px #bcbcbc;
+}
+
+.inverted-pane-warp {
+    height: 140px;
+    width: 25px;
+    margin-left: 20%;
+    -webkit-transform: skewX(-15deg);
+}
+
+.inverted-steps-pane {
+    height: 140px;
+    width: 140px;
+    background: #dad7d7;
+    margin-left: 30px;
+    box-shadow: 7px 0px 5px #bcbcbc;
+}
+
+@media(min-width: 900px) {
+    .steps-timeline {
+        border-top: 5px double #D81C57;
+        padding-top: 20px;
+        margin-top: 40px;
+        margin-left: 1%;
+        margin-right: 6%;
+    }
+    .steps-one,
+    .steps-two,
+    .steps-three,
+    .steps-four,
+    .steps-five {
+        float: left;
+        width: 20%;
+        margin-top: -105px;
+    }
+    .step-wrap {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: transparent;
+        margin-left: 39%;
+        border: 2px solid #D81C57;
+    }
+    .verticle-line {
+        position: absolute;
+        height: 57px;
+        width: 5px;
+        margin-left: 10px;
+    }
+    .steps-stops {
+        height: 25px;
+        width: 25px;
+        margin: 11px 10.1px;
+        border-radius: 50%;
+        background: #D81C57;
+    }
+    .inverted-end-circle {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 19px;
+        margin-left: 18.1%;
+    }
+}
+
+@media(max-width: 899px) {
+    #process .container-fluid {
+        width: 50%;
+    }
+    .steps-timeline {
+        border-left: 5px double #D81C57;
+        margin-left: 35px;
+    }
+    .steps-one,
+    .steps-two,
+    .steps-three,
+    .steps-four,
+    .steps-five {
+        margin-left: -25px;
+    }
+    .step-wrap,
+    .steps-stops {
+        float: left;
+    }
+    .steps-timeline {
+        border-left: 2px solid #D81C57;
+        margin-left: 30px;
+    }
+    .pane-warp {
+        margin-left: 30%;
+    }
+    .inverted-pane-warp {
+        margin-left: 30%;
+    }
+    .verticle-line {
+        position: absolute;
+        width: 125px;
+        height: 5px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .steps-stops {
+        height: 25px;
+        width: 25px;
+        margin: 11px 10px;
+        border-radius: 50%;
+        background: #D81C57;
+    }
+    .step-wrap {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background: transparent;
+        margin-top: 125px;
+        margin-left: -2px;
+        border: 2px solid #D81C57;
+    }
+    .inverted-end-circle {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: 280px;
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    #process .container-fluid {
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px) {
+    .verticle-line {
+        width: 105px;
+    }
+}
+
+.back-orange {
+    background: #D81C57;
+}
+
+.back-blue {
+    background-color: #FFAE29;
+}
+
+
+/** FIN PARTIE PARCOURS **/

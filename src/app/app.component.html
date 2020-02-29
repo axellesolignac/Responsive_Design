@@ -1,0 +1,14 @@
+<!--Ma div pour la navbar ainsi que l'appel de ma fonction javascript située dans le fichier index.html-->
+<div class="topnav effect" id="myTopnav">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <mat-icon id="menu">menu</mat-icon>
+    </a>
+    <a href="#about" routerLink="/about">ABOUT</a>
+    <a href="#article" routerLink="/left">SKILLS</a>
+    <a href="#portfolio" routerLink="/left">GRADE</a>
+    <a href="#contact" routerLink="/right">CONTACT</a>
+</div>
+<!--Appel les routes que j'ai créé pour faire des effets sur les pages / Voir dans le fichier route-animations.ts et app-routing.module.ts-->
+<main [@routeAnimations]="prepareRoute(outlet)" class="content">
+    <router-outlet #outlet="outlet"></router-outlet>
+</main>

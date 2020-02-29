@@ -1,0 +1,78 @@
+/** PARTIE NAVBAR **/
+
+.topnav .icon {
+    display: none;
+}
+
+div.topnav {
+    font-family: Raleway;
+    overflow: hidden;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    padding-top: 40px;
+}
+
+div.topnav a {
+    text-decoration: none;
+    font: 14px Raleway;
+    margin: 0px 0px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+    color: black;
+    display: inline-block;
+}
+
+div.effect a:before,
+div.effect a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: black;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.effect a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.effect a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.effect a:hover:before,
+div.effect a:hover:after {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+/* Partie responsive de la navabar */
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        display: flex;
+        align-items: center;
+    }
+    .topnav.responsive {
+        position: absolute;
+    }
+    .topnav.responsive a {
+        display: block;
+        background-color: rgba(129, 129, 129, 0.4);
+    }
+}
+
+
+/** FIN PARTIE NAVBAR **/

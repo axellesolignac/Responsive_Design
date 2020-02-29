@@ -1,0 +1,284 @@
+/* MES COMPETENCES */
+
+#skill {
+    padding: 100px;
+}
+
+#skill-page {
+    background: rgb(255, 174, 41);
+    background: linear-gradient(0deg, rgba(255, 174, 41, 1) 0%, rgba(255, 248, 236, 1) 41%, rgba(255, 255, 255, 1) 78%);
+}
+
+.border-shadow {
+    box-shadow: 0px 0px 2px #717171;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    float: right;
+    padding-top: 2px;
+    padding-right: 15px;
+}
+
+.skill-bar {
+    display: inline-block;
+    cursor: pointer;
+    background: #D81C57;
+    height: 15px;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+.html-bar {
+    width: 70%;
+}
+
+.css-bar {
+    width: 70%;
+}
+
+.bootstrap-bar {
+    width: 100%;
+}
+
+.javascript-bar {
+    width: 55%;
+}
+
+.jquery-bar {
+    width: 45%;
+}
+
+.php-bar {
+    width: 65%;
+}
+
+.laravel-bar {
+    width: 70%;
+}
+
+.ajax-bar {
+    width: 20%;
+}
+
+.mysql-bar {
+    width: 68%;
+}
+
+.wordpress-bar {
+    width: 100%;
+}
+
+
+/* Animation clignotante */
+
+.animation-blink {
+    color: white;
+    animation-name: blink;
+    animation-delay: 0.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    0% {
+        color: black;
+    }
+    100% {
+        color: white;
+    }
+}
+
+
+/* FIN MES COMPETENCES */
+
+
+/* CORRECTION DIV FANTOME : CODE GENERE */
+
+.corr-bug {
+    height: 0;
+}
+
+
+/* FIN CORRECTION DIV FANTOME : CODE GENERE */
+
+
+/* MES PROJETS */
+
+.real-project {
+    padding-bottom: 50px;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 1080px;
+    height: 250px;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+.accordion ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+.accordion ul li {
+    display: table-cell;
+    vertical-align: bottom;
+    position: relative;
+    width: 16.666%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all 500ms ease;
+}
+
+.accordion ul li div {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.accordion ul li div a {
+    display: block;
+    height: 250px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: Open Sans, sans-serif;
+    transition: all 200ms ease;
+}
+
+.accordion ul li div a * {
+    opacity: 0;
+    margin: 0;
+    width: 100%;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 5;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+    -webkit-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.accordion ul li div a h2 {
+    text-overflow: clip;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    top: 160px;
+}
+
+.accordion ul li div a p {
+    top: 160px;
+    font-size: 13.5px;
+}
+
+.accordion ul li:nth-child(1) {
+    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+}
+
+.accordion ul li:nth-child(2) {
+    background-image: url("https://stream.mediatheques.fr/res/medias/album/400c/705/169705.jpg");
+}
+
+.accordion ul li:nth-child(3) {
+    background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+}
+
+.accordion ul li:nth-child(4) {
+    background-image: url("http://michael-ferry.com/assets/accordion4.jpg");
+}
+
+.accordion ul li:nth-child(5) {
+    background-image: url("http://michael-ferry.com/assets/accordion5.jpg");
+}
+
+.accordion ul li:nth-child(6) {
+    background-image: url("https://www.scoopturn.com/media/futclub/FUT18ApplicationWeb.jpg");
+}
+
+.accordion ul:hover li,
+.accordion ul:focus-within li {
+    width: 8%;
+}
+
+.accordion ul li:focus {
+    outline: none;
+}
+
+.accordion ul:hover li:hover,
+.accordion ul li:focus,
+.accordion ul:focus-within li:focus {
+    width: 60%;
+}
+
+.accordion ul:hover li:hover a,
+.accordion ul li:focus a,
+.accordion ul:focus-within li:focus a {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a *,
+.accordion ul li:focus a *,
+.accordion ul:focus-within li:focus a * {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.accordion ul:hover li {
+    width: 8% !important;
+}
+
+.accordion ul:hover li a * {
+    opacity: 0 !important;
+}
+
+.accordion ul:hover li:hover {
+    width: 60% !important;
+}
+
+.accordion ul:hover li:hover a {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.accordion ul:hover li:hover a * {
+    opacity: 1 !important;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+@media screen and (max-width: 600px) {
+    .accordion {
+        height: 0;
+    }
+    .accordion ul li,
+    .accordion ul li:hover,
+    .accordion ul:hover li,
+    .accordion ul:hover li:hover {
+        position: relative;
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        -webkit-transition: none;
+        transition: none;
+    }
+}
+
+
+/* FIN MES PROJETS */
